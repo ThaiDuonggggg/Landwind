@@ -11,6 +11,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .header {
     position: fixed;
     height: 60px;
@@ -48,6 +52,10 @@ html {
     color: var(--black-color);
     font-weight: 500;
     line-height: 1.4;
+}
+
+.header__nav-main.active {
+    display: block;
 }
 
 /*Handle header list item */
@@ -134,6 +142,7 @@ html {
     padding: 8px;
     margin-left: 10px;
     user-select: none;
+    display: none;
 }
 
 /*Welcome*/
@@ -544,6 +553,8 @@ h1.building__heading-text {
     cursor: pointer;
     user-select: none;
     border-bottom: 1px solid var(--border-color);
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.3s ease;
 }
 
 .asked-question__item {
@@ -683,12 +694,18 @@ h1.building__heading-text {
     font-size: 1.8rem;
 }
 
-/*Mobile*/
+/**/
 
-.header__nav-main.active {
+.asked-question__list.active {
+    display: flex;
+}
+
+.asked-question__list.active .asked-question__item,
+.asked-question__list.active .asked__icon-up {
+    color: var(--black-color);
+    
+}
+
+.asked-question__description.active {
     display: block;
-}
-
-.header__nav-icon-mobile {
-    display: none;
-}
+} 

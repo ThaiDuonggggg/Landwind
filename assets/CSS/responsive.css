@@ -187,6 +187,7 @@
     .work__tools-heading-text {
         font-size: 3.2rem;
     }
+    
 }
 
 
@@ -272,6 +273,17 @@
     .footer-contact {
         padding: 24px 16px;
     }
+    .header__nav-main.active {
+        display: block;
+    }
+    
+    .header__nav-icon-mobile {
+        display: block;
+    }
+    .asked-question__description-text {
+        line-height: 1.5;
+    }
+    
 }
 
 /*PC*/
